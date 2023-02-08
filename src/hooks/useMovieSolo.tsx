@@ -3,25 +3,28 @@ import { useEffect, useState } from "react"
 import { REACT_LANGUAGE } from "../api/apiUrl"
 
 export function useMovieSolo(url: string) {
-    const [data, setData] = useState()
-    const [select, setSelect] = useState({})
+  const [data, setData] = useState()
+  const [select, setSelect] = useState({})
+  const [isFetching, setIsFetching] = useState(true)
+  const fetchMovies = async () => {
+    const { data } = await axios.get(url + `${REACT_LANGUAGE}`)
+      .finally(() => {
+        setIsFetching(false)
+      })
+    setSelect(data)
+    setData(data)
+  }
 
-    const fetchMovies = async () => {
-        const { data } = await axios.get(url + `${REACT_LANGUAGE}`)
+  useEffect(() => {
+    fetchMovies()
+    window.scrollTo(0, 0)
+  }, [])
 
-        setSelect(data)
-        setData(data)
-    }
-
-    useEffect(() => {
-        fetchMovies()
-        window.scrollTo(0, 0)
-    }, [])
-
-    return {
-        data,
-        select,
-        setSelect,
-        fetchMovies,
-    }
+  return {
+    data,
+    select,
+    setSelect,
+    fetchMovies,
+    isFetching
+  }
 }

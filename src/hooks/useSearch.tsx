@@ -30,6 +30,7 @@ export function useSearch(urlSearch: string, url: string) {
 
   useEffect(() => {
     fetchMovies(search)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return {
     data,

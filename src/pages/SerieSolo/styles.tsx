@@ -117,9 +117,22 @@ padding: 0px 2rem;
 
 export const ContaineProduction = styled.div`
 width: 100%;
-padding: 10px;
+padding: 1rem;
 margin: auto;
 text-align: center;
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+  }
+
+ *::-webkit-scrollbar-track {
+  background: transparent;
+ }
+
+ *::-webkit-scrollbar-thumb {
+  background-color: #575757;
+  border-radius: 20px;
+ }
 `
 
 export const ImgCompany = styled.img`

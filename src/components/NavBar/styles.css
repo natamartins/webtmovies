@@ -1,0 +1,9 @@
+.hidden {
+  background-color: rgba(180, 180, 180, 0.5);
+  transition: background-color 150ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s;
+  backdrop-filter: blur(10px);
+}
+
+.active {
+  color: red;
+}

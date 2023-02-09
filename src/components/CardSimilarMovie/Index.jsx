@@ -15,8 +15,8 @@ const CardSimilar = () => {
   }
 
   return (
-    <div>
-      <h1>similar</h1>
+    <S.CardSimilar>
+      <S.Title>Similar</S.Title>
       <S.Wrapper>
         {
           data && data.map(movie => (
@@ -26,7 +26,7 @@ const CardSimilar = () => {
           ))
         }
       </S.Wrapper>
-    </div>
+    </S.CardSimilar>
   )
 }
 

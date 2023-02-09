@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import * as S from './styles'
-import './styles'
+import './styles.css'
 import Logo from '../../img/logo.svg'
 
 const NavBar = () => {
@@ -33,7 +33,7 @@ const NavBar = () => {
           </S.Links>
         </S.BoxLink>
       </S.Nav>
-      <S.NavMobile>
+      <S.NavMobile >
         <S.Links>
           <Link to="/">Home</Link>
         </S.Links>

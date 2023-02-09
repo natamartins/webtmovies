@@ -50,7 +50,9 @@ export const NavMobile = styled.div`
 display: none;
 width: 100%;
 height: 50px;
-background-color: #000000;
+background-color: rgba(180, 180, 180, 0.5);
+  transition: background-color 150ms ease 0s, -webkit-transform 150ms ease 0s, -webkit-backdrop-filter 150ms ease 0s;
+  backdrop-filter: blur(10px);
 @media (max-width: 850px) {
 display: flex;
 align-items: center;

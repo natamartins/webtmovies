@@ -10,6 +10,19 @@ export const CardMovies = styled.div`
   padding: 0 1rem;
   margin: auto;
   margin-bottom: 30px;
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #575757;
+  border-radius: 20px;
+}
 `
 export const Wrapper = styled.main`
   display: flex;

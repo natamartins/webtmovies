@@ -7,6 +7,7 @@ import SearchIcon from '../../img/search.png'
 import CardCarousel from '../../components/CarouselMovies/Carosel'
 import CardMovies from '../../components/CardMovies/Index'
 import { useSearch } from '../../hooks/useSearch'
+import Footer from '../../components/Footer/Index'
 
 const Movie = () => {
   const { data, setSearch, searchMovies, isFetching } = useSearch("search/movie", "movie/upcoming?")
@@ -39,6 +40,7 @@ const Movie = () => {
           ))
         }
       </S.CardMovies>
+      <Footer />
     </>
   )
 }

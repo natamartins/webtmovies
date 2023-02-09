@@ -13,8 +13,8 @@ const CardSimilarSeries = () => {
     window.scrollTo(0, 0)
   }
   return (
-    <div>
-      <h1>similar</h1>
+    <S.CardSimilar>
+      <S.Title>Similar</S.Title>
       <S.Wrapper>
         {
           data?.map(tvseries => (
@@ -24,7 +24,7 @@ const CardSimilarSeries = () => {
           ))
         }
       </S.Wrapper>
-    </div>
+    </S.CardSimilar>
   )
 }
 

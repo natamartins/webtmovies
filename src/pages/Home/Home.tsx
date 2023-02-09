@@ -10,6 +10,7 @@ import AllDayTrend from '../../components/AllDayTrend/Index';
 import NavBar from '../../components/NavBar/NavBar'
 import CardMoviesPopular from '../../components/CardMoviesPopular/Index'
 import CardSeriesPopular from '../../components//CardSeriesPopular/Index'
+import Footer from '../../components/Footer/Index';
 
 const Home = () => {
   const { data, isFetching } = useFetch(`${REACT_URL}/movie/popular?`)
@@ -45,6 +46,7 @@ const Home = () => {
         <S.SubTitle>Series Popular</S.SubTitle>
         <CardSeriesPopular />
       </S.CardMovies>
+      <Footer />
     </>
   )
 }

@@ -9,7 +9,7 @@ export const Wrapper = styled.main`
 `;
 
 export const CardSimilar = styled.div`
-width: 1000px;
+width: 100%;
 margin: auto;
 *::-webkit-scrollbar {
   width: 12px;

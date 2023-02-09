@@ -9,7 +9,7 @@ overflow: hidden;
 cursor:pointer;
 width:200px;
 height:300px;
-z-index:0;
+z-index:10;
 border: 1px solid rgb(255, 255, 255);
 :hover {
  transform: scale(1.08);

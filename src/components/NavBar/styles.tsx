@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-.hidden {
-    background-color: rgb(0, 0, 0);
-}
 position: fixed;
 width: 100%;
 padding: 0px 10rem;
@@ -11,7 +8,7 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: space-between;
-z-index: 800;
+z-index: 999;
 @media (max-width: 850px) {
   display: none;
   }

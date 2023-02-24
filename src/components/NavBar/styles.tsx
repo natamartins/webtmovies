@@ -26,6 +26,12 @@ export const Links = styled.li`
 position: relative;
 font-size: 1rem;
 text-decoration: none;
+.active {
+  color: red;
+  border-bottom: 3px solid red;
+  padding-bottom: 2px;
+}
+
 :hover{
   a {
     color: tomato;
@@ -37,11 +43,12 @@ text-decoration: none;
     bottom: -3px;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: red;
 
   }
 }
 `
+
 // mobile
 export const NavMobile = styled.div`
 display: none;

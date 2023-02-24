@@ -4,7 +4,3 @@
   backdrop-filter: blur(10px);
   z-index: 999;
 }
-
-.active {
-  color: red;
-}

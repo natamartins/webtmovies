@@ -9,6 +9,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 gap: 10px;
 padding: 10px;
+text-align: center;
 @media (max-width: 434px) {
 max-width: fit-content;
 }

@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const BoxMovies = styled.div`
-width: 70%;
+width: 100%;
+max-width: 1000px;
 margin: auto;
 margin-bottom: 40px;
 display: grid;
 gap: 10px;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+padding: 10px;
+text-align: center;
 @media (max-width: 434px) {
 max-width: fit-content;
 }

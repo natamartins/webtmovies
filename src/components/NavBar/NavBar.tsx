@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import * as S from './styles'
 import './styles.css'
 import Logo from '../../img/logo.svg'
@@ -23,25 +23,25 @@ const NavBar = () => {
         <S.Logo src={Logo} />
         <S.BoxLink>
           <S.Links>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </S.Links>
           <S.Links>
-            <Link to="/movies">Movies</Link>
+            <NavLink to="/movies">Movies</NavLink>
           </S.Links>
           <S.Links>
-            <Link to="/series">TV Series</Link>
+            <NavLink to="/series">TV Series</NavLink>
           </S.Links>
         </S.BoxLink>
       </S.Nav>
       <S.NavMobile >
         <S.Links>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </S.Links>
         <S.Links>
-          <Link to="/movies">Movies</Link>
+          <NavLink to="/movies">Movies</NavLink>
         </S.Links>
         <S.Links>
-          <Link to="/series">TV Series</Link>
+          <NavLink to="/series">TV Series</NavLink>
         </S.Links>
       </S.NavMobile>
     </>
